@@ -6,5 +6,14 @@
   "byBook": "By Book",
   "byTopic": "By Topic",
   "noResources": "No resources available yet.",
-  "language": "Language"
+  "language": "Language",
+  "heroTitle": "Learn, explore and connect",
+  "heroSubtitle": "Digital resources that complement our technology and digitalization books.",
+  "exploreBooks": "📘 Explore by Book",
+  "cardBooks": "📚 View by Book",
+  "cardTopics": "🧠 View by Topic",
+  "cardSearch": "🔍 Search Resources",
+  "featuredTitle": "Featured Books",
+  "viewResources": "View Resources",
+  "footerText": "All rights reserved. Resources are for authorized readers only."
 }

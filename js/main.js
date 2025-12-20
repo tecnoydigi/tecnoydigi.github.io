@@ -2,9 +2,11 @@ let lang = localStorage.getItem("lang") || "en";
 let translations = {};
 
 document.addEventListener("DOMContentLoaded", async () => {
+  // Cargar traducciones
   translations = await loadLanguage(lang);
   applyTranslations();
 
+  // Selector de idioma
   document.querySelectorAll("#language-switcher").forEach(sel => {
     sel.value = lang;
     sel.addEventListener("change", async e => {
@@ -12,10 +14,11 @@ document.addEventListener("DOMContentLoaded", async () => {
       localStorage.setItem("lang", lang);
       translations = await loadLanguage(lang);
       applyTranslations();
-      loadPageData();
+      loadPageData(); // solo si hay contenido dinámico
     });
   });
 
+  // Cargar datos dinámicos si corresponde
   loadPageData();
 });
 
@@ -29,20 +32,20 @@ function applyTranslations() {
 }
 
 async function loadPageData() {
-  await loadResources();
-  if (document.getElementById("books-container")) showBooks();
-}
-function showBooks() {
-  const container = document.getElementById("books-container");
-  container.innerHTML = "";
-  resourcesData.books.forEach(book => {
-    const bookDiv = document.createElement("div");
-    const title = book.title[lang] || book.title["en"];
-    bookDiv.innerHTML = `<h2>${title}</h2>`;
-    book.chapters.forEach(ch => {
-      const chTitle = ch.title[lang] || ch.title["en"];
-      bookDiv.innerHTML += `<div class="chapter"><a href="chapter.html?book=${book.id}&chapter=${ch.id}">${chTitle}</a></div>`;
-    });
-    container.appendChild(bookDiv);
-  });
+  if (typeof loadResources === "function") {
+    await loadResources();
+  }
+
+  // Puedes detectar contenedores para cargar datos dinámicos:
+  if (document.getElementById("books-container") && typeof showBooks === "function") {
+    showBooks();
+  }
+
+  if (document.getElementById("topics-container") && typeof showTopics === "function") {
+    showTopics();
+  }
+
+  if (document.getElementById("resources-container") && typeof showChapterResources === "function") {
+    showChapterResources();
+  }
 }

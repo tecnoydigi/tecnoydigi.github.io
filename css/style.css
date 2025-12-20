@@ -1,129 +1,28 @@
-body {
-  margin: 0;
-  font-family: 'Poppins', sans-serif;
-  background-color: #f4f8fc;
-  color: #333;
-}
-
-.site-header {
-  background-color: #fff;
-  padding: 1rem 2rem;
+nav {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  gap: 1rem;
   align-items: center;
-  border-bottom: 2px solid #e3e3e3;
+  flex-wrap: wrap;
 }
 
 nav a {
-  margin-right: 1rem;
+  padding: 0.5rem 1rem;
   text-decoration: none;
-  color: #333;
-  font-weight: 500;
-}
-
-nav select {
-  padding: 0.3rem;
-}
-
-.hero {
-  background: linear-gradient(to right, #3a7bd5, #00d2ff);
+  background-color: #0077cc;
   color: white;
-  padding: 4rem 2rem;
-  text-align: center;
-}
-
-.hero-content h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
-
-.hero-content p {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
-}
-
-.btn-primary, .btn-secondary {
-  display: inline-block;
-  background-color: #fff;
-  color: #0077cc;
-  padding: 0.8rem 1.5rem;
   border-radius: 4px;
-  text-decoration: none;
-  font-weight: bold;
   transition: background-color 0.3s;
 }
 
-.btn-primary:hover, .btn-secondary:hover {
-  background-color: #e0e0e0;
+nav a:hover {
+  background-color: #005fa3;
 }
 
-.quick-links {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  padding: 2rem 1rem;
-  flex-wrap: wrap;
-}
-
-.card {
-  background-color: white;
-  padding: 1rem 2rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  text-align: center;
-  font-size: 1.1rem;
-}
-
-.card a {
-  text-decoration: none;
-  color: #0077cc;
-  font-weight: 600;
-}
-
-.featured-books {
-  padding: 2rem;
-  background-color: #fff;
-}
-
-.featured-books h2 {
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-.book-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: center;
-}
-
-.book {
-  background-color: #fefefe;
-  border: 1px solid #ddd;
-  padding: 1.5rem;
-  border-radius: 6px;
-  width: 300px;
-  text-align: center;
-}
-
-footer {
-  text-align: center;
-  padding: 1.5rem;
-  background-color: #eaeaea;
-  font-size: 0.9rem;
-  color: #555;
-  margin-top: 2rem;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .book-grid {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .hero-content h2 {
-    font-size: 1.8rem;
-  }
+nav select {
+  padding: 0.5rem 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: white;
+  font-weight: 500;
+  color: #333;
 }
