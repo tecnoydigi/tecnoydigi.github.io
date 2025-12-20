@@ -1,8 +1,8 @@
 /* --- BASE / PALETA --- */
 :root {
   --blue-dark: #0e0f5a;
-  --blue-light-start: #3a7bd5;
-  --blue-light-end: #00d2ff;
+  --blue-hero-start: #34a2db;
+  --blue-hero-end: #00d2ff;
   --yellow: #FFD166;
   --white: #FFFFFF;
   --gray-text: #222222;
@@ -41,6 +41,7 @@ nav {
   display: flex;
   gap: 1rem;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 nav a {
@@ -50,7 +51,7 @@ nav a {
   color: var(--blue-dark);
   border-radius: 5px;
   font-weight: 600;
-  transition: 0.25s ease;
+  transition: 0.3s ease;
 }
 
 nav a:hover {
@@ -66,12 +67,13 @@ nav select {
   font-weight: 600;
 }
 
-/* --- HERO --- */
+/* --- HERO con gradiente nuevo --- */
 .hero {
   background: linear-gradient(
     to right,
-    var(--blue-light-start),
-    var(--blue-light-end)
+    var(--blue-hero-start),
+    var(--blue-hero-end),
+    var(--blue-hero-start)
   );
   color: var(--white);
   padding: 3rem 2rem;
@@ -82,9 +84,30 @@ nav select {
   font-size: 2.2rem;
   margin-bottom: 0.8rem;
 }
-
 .hero-content p {
   font-size: 1.2rem;
+}
+
+/* --- BOTONES DE NAVEGACIÓN ABAJO DEL HERO --- */
+.hero-nav-buttons {
+  text-align: center;
+  margin: 1.5rem 0;
+  gap: 1rem;
+}
+
+.hero-nav-buttons .btn-secondary {
+  margin: 0.5rem;
+  padding: 0.8rem 1.5rem;
+  background-color: var(--yellow);
+  color: var(--blue-dark);
+  border-radius: 5px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.hero-nav-buttons .btn-secondary:hover {
+  background-color: #ffeb99;
 }
 
 /* --- SECCIÓN DE HIGHLIGHT --- */
@@ -132,18 +155,6 @@ nav select {
   margin-bottom: 0.8rem;
 }
 
-/* --- BOTONES SECUNDARIOS --- */
-.btn-secondary {
-  display: inline-block;
-  padding: 0.6rem 1.2rem;
-  background-color: var(--yellow);
-  color: var(--blue-dark);
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: 600;
-  margin-top: 0.5rem;
-}
-
 /* --- FOOTER --- */
 footer {
   padding: 1rem;
@@ -152,13 +163,6 @@ footer {
   color: var(--white);
   text-align: center;
   margin-top: 2rem;
-}
-
-/* --- MEDIA QUERIES --- */
-@media (max-width: 768px) {
-  .hero-content h2 {
-    font-size: 1.8rem;
-  }
 }
 
 
