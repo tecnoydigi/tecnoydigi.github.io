@@ -1,0 +1,44 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 1rem;
+  margin: 0 auto;
+  max-width: 900px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav a {
+  margin-right: 1rem;
+}
+.book {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.chapter {
+  background: #f7f7f7;
+  padding: 0.5rem;
+  margin-top: 0.4rem;
+}
+#search-input {
+  width: 100%;
+  padding: 0.7rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+.topic-filter {
+  margin: 0.5rem 0;
+}
+.result {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #777;
+}

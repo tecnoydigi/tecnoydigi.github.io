@@ -1,0 +1,45 @@
+{
+  "books": [
+    {
+      "id": "tech_text_workbook",
+      "title": { "en": "Technology: Student's Book & Workbook for Secondary Education", "es": "Tecnología: Libro de clase y ejercicios" },
+      "chapters": [
+        {
+          "id": "estructuras",
+          "title": { "en": "Structures", "es": "Estructuras" },
+          "resources": [
+            {
+              "type": "pdf",
+              "title": { "en": "Structures Worksheet", "es": "Ficha de estructuras" },
+              "url": "assets/pdfs/estructuras.pdf",
+              "topics": ["structures"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "digital_technologies",
+      "title": { "en": "Digital Technology: Student's Book & Workbook for Secondary Education", "es": "Digitalización: Libro de clase y ejercicios" },
+      "chapters": [
+        {
+          "id": "programacion_scratch",
+          "title": { "en": "Programming: Scratch", "es": "Programación Scratch" },
+          "resources": [
+            {
+              "type": "pdf",
+              "title": { "en": "Scratch Guide", "es": "Guía de Scratch" },
+              "url": "assets/pdfs/scratch_guia.pdf",
+              "topics": ["programming", "scratch"]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "topics": [
+    { "id": "structures", "name": { "en": "Structures", "es": "Estructuras" } },
+    { "id": "programming", "name": { "en": "Programming", "es": "Programación" } },
+    { "id": "scratch", "name": { "en": "Scratch", "es": "Scratch" } }
+  ]
+}

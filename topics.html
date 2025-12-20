@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title data-i18n="topics">Topics</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <a href="index.html">← Back</a>
+    <h1 data-i18n="topics">Topics</h1>
+    <select id="language-switcher">
+      <option value="en">English</option>
+      <option value="es">Español</option>
+    </select>
+  </header>
+
+  <main id="topics-list"></main>
+
+  <footer>
+    © 2025 DVL Ediciones. Todos los derechos reservados.
+  </footer>
+
+  <script src="js/dataLoader.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", async () => {
+      await loadResources();
+      const container = document.getElementById("topics-list");
+      container.innerHTML = "";
+      resourcesData.topics.forEach(topic => {
+        const div = document.createElement("div");
+        const name = topic.name[lang] || topic.name["en"];
+        div.textContent = name;
+        container.appendChild(div);
+      });
+    });
+  </script>
+</body>
+</html>
