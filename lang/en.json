@@ -1,15 +1,16 @@
 {
+  "siteTitle": "TecnoyDigi",
+  "byBook": "By Book",
+  "byTopic": "By Topic",
+  "search": "Search",
   "heroTitle": "Learn, explore and connect",
   "heroSubtitle": "Digital resources that complement our books.",
-  "exploreBooks": "Explore by Book",
-  "cardBooks": "View by Book",
-  "cardTopics": "View by Topic",
-  "cardSearch": "Search Resources",
+  "highlightText": "More than 500 pages of structured exercises in Thematic Notebooks. Designed to promote autonomous student work with videos, modelings, explanations and guided exercises.",
   "featuredTitle": "Featured Books",
   "book1Title": "Technology: Student's Book & Workbook",
   "book1Isbn": "ISBN: 978-84-09-76320-7",
   "book2Title": "Digital Technology: Student's Book & Workbook",
   "book2Isbn": "ISBN: 978-84-09-80157-2",
-  "footerText": "All rights reserved. Resources for authorized users only.",
-  "highlightText": "More than 500 pages of structured exercises in Thematic Notebooks. Designed to promote autonomous student work with videos, modelings, explanations and guided exercises."
+  "viewResources": "View Resources",
+  "footerText": "All rights reserved. Authorized users only."
 }
