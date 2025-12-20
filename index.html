@@ -2,20 +2,21 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title data-i18n="siteTitle">Educational Resources</title>
+  <title data-i18n="siteTitle">TecnoyDigi</title>
   <link rel="stylesheet" href="css/style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
 </head>
 <body>
   <header class="site-header">
-    <div class="logo">
-      <h1 data-i18n="siteTitle">Educational Resources</h1>
+    <div class="header-left">
+      <img src="assets/logos/tecnodigi.avif" alt="Tecnodigi" class="logo-img" />
+      <h1 data-i18n="siteTitle">TecnoyDigi / DVL Ediciones</h1>
+      <img src="assets/logos/dvl_ediciones.png" alt="DVL Ediciones" class="logo-img" />
     </div>
     <nav>
       <a href="books.html" data-i18n="byBook">By Book</a>
       <a href="topics.html" data-i18n="byTopic">By Topic</a>
       <a href="search.html" data-i18n="search">Search</a>
-
       <select id="language-switcher">
         <option value="en">English</option>
         <option value="es">Español</option>
@@ -27,32 +28,25 @@
     <div class="hero-content">
       <h2 data-i18n="heroTitle">Learn, explore and connect</h2>
       <p data-i18n="heroSubtitle">Digital resources that complement our books.</p>
-      <a href="books.html" class="btn-primary" data-i18n="exploreBooks">Explore by Book</a>
     </div>
   </section>
 
-  <section class="quick-links">
-    <div class="card">
-      <a href="books.html" data-i18n="cardBooks">View by Book</a>
-    </div>
-    <div class="card">
-      <a href="topics.html" data-i18n="cardTopics">View by Topic</a>
-    </div>
-    <div class="card">
-      <a href="search.html" data-i18n="cardSearch">Search Resources</a>
-    </div>
+  <section class="highlight-info">
+    <p data-i18n="highlightText">More than 500 pages of structured exercises in Thematic Notebooks. Designed to promote autonomous student work with videos, modelings, explanations and guided exercises.</p>
   </section>
 
   <section class="featured-books">
     <h2 data-i18n="featuredTitle">Featured Books</h2>
     <div class="book-grid">
-      <div class="book">
-        <h3 data-i18n="book1Title">Technology: Student's Book</h3>
+      <div class="book-card">
+        <img src="assets/covers/tech_book_cover.png" alt="Technology Book" class="book-cover" />
+        <h3 data-i18n="book1Title">Technology: Student's Book & Workbook</h3>
         <p data-i18n="book1Isbn">ISBN: 978-84-09-76320-7</p>
         <a href="chapter.html?book=tech_text_workbook&chapter=estructuras" class="btn-secondary" data-i18n="viewResources">View Resources</a>
       </div>
-      <div class="book">
-        <h3 data-i18n="book2Title">Digital Technology</h3>
+      <div class="book-card">
+        <img src="assets/covers/digital_book_cover.png" alt="Digital Technology Book" class="book-cover" />
+        <h3 data-i18n="book2Title">Digital Technology: Student's Book & Workbook</h3>
         <p data-i18n="book2Isbn">ISBN: 978-84-09-80157-2</p>
         <a href="chapter.html?book=digital_technologies&chapter=programacion_scratch" class="btn-secondary" data-i18n="viewResources">View Resources</a>
       </div>

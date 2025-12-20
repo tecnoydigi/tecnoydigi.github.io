@@ -1,8 +1,4 @@
 {
-  "siteTitle": "Recursos Educativos",
-  "byBook": "Por Libro",
-  "byTopic": "Por Temática",
-  "search": "Buscar",
   "heroTitle": "Aprende, explora y conecta",
   "heroSubtitle": "Recursos digitales que complementan nuestros libros.",
   "exploreBooks": "Explorar por libro",
@@ -14,7 +10,7 @@
   "book1Isbn": "ISBN: 978-84-09-76320-7",
   "book2Title": "Digitalización: Libro de clase y ejercicios",
   "book2Isbn": "ISBN: 978-84-09-80157-2",
-  "viewResources": "Ver Recursos",
-  "footerText": "Todos los derechos reservados. Recursos solo para usuarios autorizados."
+  "footerText": "Todos los derechos reservados. Recursos solo para usuarios autorizados.",
+  "highlightText": "Más de 500 páginas de ejercicios estructurados en Cuadernos Temáticos. Diseñados para fomentar el trabajo autónomo de los alumnos con vídeos, modelizaciones, explicaciones y ejercicios de guía."
 }
 

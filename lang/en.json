@@ -1,8 +1,4 @@
 {
-  "siteTitle": "Educational Resources",
-  "byBook": "By Book",
-  "byTopic": "By Topic",
-  "search": "Search",
   "heroTitle": "Learn, explore and connect",
   "heroSubtitle": "Digital resources that complement our books.",
   "exploreBooks": "Explore by Book",
@@ -14,6 +10,6 @@
   "book1Isbn": "ISBN: 978-84-09-76320-7",
   "book2Title": "Digital Technology: Student's Book & Workbook",
   "book2Isbn": "ISBN: 978-84-09-80157-2",
-  "viewResources": "View Resources",
-  "footerText": "All rights reserved. Resources for authorized users only."
+  "footerText": "All rights reserved. Resources for authorized users only.",
+  "highlightText": "More than 500 pages of structured exercises in Thematic Notebooks. Designed to promote autonomous student work with videos, modelings, explanations and guided exercises."
 }

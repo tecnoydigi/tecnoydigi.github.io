@@ -1,145 +1,164 @@
+/* --- BASE / PALETA --- */
+:root {
+  --blue-dark: #0e0f5a;
+  --blue-light-start: #3a7bd5;
+  --blue-light-end: #00d2ff;
+  --yellow: #FFD166;
+  --white: #FFFFFF;
+  --gray-text: #222222;
+}
+
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  background-color: #f4f8fc;
-  color: #333;
+  background-color: var(--blue-dark);
+  color: var(--white);
 }
 
+/* --- HEADER --- */
 .site-header {
-  background-color: #fff;
+  background-color: var(--blue-dark);
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 2px solid #e3e3e3;
+  border-bottom: 2px solid var(--yellow);
   flex-wrap: wrap;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo-img {
+  height: 40px;
+  width: auto;
 }
 
 nav {
   display: flex;
   gap: 1rem;
   align-items: center;
-  flex-wrap: wrap;
 }
 
 nav a {
   padding: 0.5rem 1rem;
   text-decoration: none;
-  background-color: #0077cc;
-  color: white;
-  border-radius: 4px;
-  transition: background-color 0.3s;
-  font-weight: 500;
+  background-color: var(--yellow);
+  color: var(--blue-dark);
+  border-radius: 5px;
+  font-weight: 600;
+  transition: 0.25s ease;
 }
 
 nav a:hover {
-  background-color: #005fa3;
+  background-color: #ffeb99;
 }
 
 nav select {
-  padding: 0.5rem 0.7rem;
-  border: 1px solid #ccc;
+  padding: 0.5rem;
   border-radius: 4px;
-  background: white;
-  font-weight: 500;
-  color: #333;
+  border: none;
+  background-color: var(--white);
+  color: var(--blue-dark);
+  font-weight: 600;
 }
 
+/* --- HERO --- */
 .hero {
-  background: linear-gradient(to right, #3a7bd5, #00d2ff);
-  color: white;
+  background: linear-gradient(
+    to right,
+    var(--blue-light-start),
+    var(--blue-light-end)
+  );
+  color: var(--white);
   padding: 3rem 2rem;
   text-align: center;
 }
 
 .hero-content h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+  font-size: 2.2rem;
+  margin-bottom: 0.8rem;
 }
 
 .hero-content p {
-  font-size: 1.1rem;
-  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
 }
 
-.btn-primary, .btn-secondary {
-  display: inline-block;
-  background-color: #fff;
-  color: #0077cc;
-  padding: 0.8rem 1.5rem;
-  border-radius: 4px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s;
-}
-
-.btn-primary:hover, .btn-secondary:hover {
-  background-color: #e0e0e0;
-}
-
-.quick-links {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
+/* --- SECCIÓN DE HIGHLIGHT --- */
+.highlight-info {
   padding: 2rem 1rem;
-  flex-wrap: wrap;
-}
-
-.card {
-  background-color: white;
-  padding: 1rem 2rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  background-color: var(--yellow);
+  color: var(--blue-dark);
   text-align: center;
   font-size: 1.1rem;
-  min-width: 150px;
+  font-weight: 500;
 }
 
-.card a {
-  text-decoration: none;
-  color: #0077cc;
-  font-weight: 600;
-}
-
+/* --- BOOK GRID --- */
 .featured-books {
-  padding: 2rem;
-  background-color: #fff;
-}
-
-.featured-books h2 {
+  padding: 2rem 1rem;
   text-align: center;
-  margin-bottom: 1.5rem;
 }
 
 .book-grid {
   display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
   justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
 }
 
-.book {
-  background-color: #fefefe;
-  border: 1px solid #ddd;
-  padding: 1.5rem;
-  border-radius: 6px;
-  width: 280px;
-  text-align: center;
-}
-
-footer {
-  text-align: center;
+.book-card {
+  background-color: var(--white);
+  color: var(--blue-dark);
+  border-radius: 8px;
   padding: 1rem;
-  background-color: #eaeaea;
-  font-size: 0.9rem;
-  color: #555;
+  width: 260px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
+  transition: 0.3s ease;
+}
+
+.book-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 14px rgba(0,0,0,0.25);
+}
+
+.book-cover {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 0.8rem;
+}
+
+/* --- BOTONES SECUNDARIOS --- */
+.btn-secondary {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background-color: var(--yellow);
+  color: var(--blue-dark);
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+
+/* --- FOOTER --- */
+footer {
+  padding: 1rem;
+  font-size: 0.85rem;
+  background-color: #131351;
+  color: var(--white);
+  text-align: center;
   margin-top: 2rem;
 }
 
-/* Responsive */
+/* --- MEDIA QUERIES --- */
 @media (max-width: 768px) {
   .hero-content h2 {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
 }
+
 
