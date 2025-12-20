@@ -6,21 +6,27 @@ document.addEventListener("DOMContentLoaded", async () => {
   translations = await loadLanguage(lang);
   applyTranslations();
 
-  // Selector de idioma
-  document.querySelectorAll("#language-switcher").forEach(sel => {
-    sel.value = lang;
-    sel.addEventListener("change", async e => {
+  const selector = document.getElementById("language-switcher");
+  if (selector) {
+    selector.value = lang;
+    selector.addEventListener("change", async (e) => {
       lang = e.target.value;
       localStorage.setItem("lang", lang);
       translations = await loadLanguage(lang);
       applyTranslations();
-      loadPageData(); // solo si hay contenido dinámico
     });
-  });
-
-  // Cargar datos dinámicos si corresponde
-  loadPageData();
+  }
 });
+
+async function loadLanguage(lng) {
+  try {
+    const res = await fetch(`lang/${lng}.json`);
+    return await res.json();
+  } catch (err) {
+    console.error("Error loading language:", err);
+    return {};
+  }
+}
 
 function applyTranslations() {
   document.querySelectorAll("[data-i18n]").forEach(el => {
@@ -31,21 +37,3 @@ function applyTranslations() {
   });
 }
 
-async function loadPageData() {
-  if (typeof loadResources === "function") {
-    await loadResources();
-  }
-
-  // Puedes detectar contenedores para cargar datos dinámicos:
-  if (document.getElementById("books-container") && typeof showBooks === "function") {
-    showBooks();
-  }
-
-  if (document.getElementById("topics-container") && typeof showTopics === "function") {
-    showTopics();
-  }
-
-  if (document.getElementById("resources-container") && typeof showChapterResources === "function") {
-    showChapterResources();
-  }
-}

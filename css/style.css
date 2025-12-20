@@ -1,3 +1,20 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f8fc;
+  color: #333;
+}
+
+.site-header {
+  background-color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #e3e3e3;
+  flex-wrap: wrap;
+}
+
 nav {
   display: flex;
   gap: 1rem;
@@ -12,6 +29,7 @@ nav a {
   color: white;
   border-radius: 4px;
   transition: background-color 0.3s;
+  font-weight: 500;
 }
 
 nav a:hover {
@@ -26,3 +44,102 @@ nav select {
   font-weight: 500;
   color: #333;
 }
+
+.hero {
+  background: linear-gradient(to right, #3a7bd5, #00d2ff);
+  color: white;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.hero-content h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.btn-primary, .btn-secondary {
+  display: inline-block;
+  background-color: #fff;
+  color: #0077cc;
+  padding: 0.8rem 1.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover, .btn-secondary:hover {
+  background-color: #e0e0e0;
+}
+
+.quick-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 2rem 1rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: white;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+  font-size: 1.1rem;
+  min-width: 150px;
+}
+
+.card a {
+  text-decoration: none;
+  color: #0077cc;
+  font-weight: 600;
+}
+
+.featured-books {
+  padding: 2rem;
+  background-color: #fff;
+}
+
+.featured-books h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.book-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.book {
+  background-color: #fefefe;
+  border: 1px solid #ddd;
+  padding: 1.5rem;
+  border-radius: 6px;
+  width: 280px;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #eaeaea;
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-content h2 {
+    font-size: 1.6rem;
+  }
+}
+

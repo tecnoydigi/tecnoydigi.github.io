@@ -1,19 +1,20 @@
 {
   "siteTitle": "Recursos Educativos",
-  "books": "Libros",
-  "topics": "Temáticas",
-  "search": "Buscar",
   "byBook": "Por Libro",
   "byTopic": "Por Temática",
-  "noResources": "No hay recursos disponibles aún.",
-  "language": "Idioma",
+  "search": "Buscar",
   "heroTitle": "Aprende, explora y conecta",
-  "heroSubtitle": "Recursos digitales que complementan nuestros libros de tecnología y digitalización.",
-  "exploreBooks": "📘 Explorar por libro",
-  "cardBooks": "📚 Ver por Libro",
-  "cardTopics": "🧠 Ver por Temática",
-  "cardSearch": "🔍 Buscar Recursos",
+  "heroSubtitle": "Recursos digitales que complementan nuestros libros.",
+  "exploreBooks": "Explorar por libro",
+  "cardBooks": "Ver por Libro",
+  "cardTopics": "Ver por Temática",
+  "cardSearch": "Buscar Recursos",
   "featuredTitle": "Libros destacados",
+  "book1Title": "Tecnología: Libro de clase y ejercicios",
+  "book1Isbn": "ISBN: 978-84-09-76320-7",
+  "book2Title": "Digitalización: Libro de clase y ejercicios",
+  "book2Isbn": "ISBN: 978-84-09-80157-2",
   "viewResources": "Ver Recursos",
-  "footerText": "Todos los derechos reservados. Los recursos están destinados únicamente a lectores autorizados."
+  "footerText": "Todos los derechos reservados. Recursos solo para usuarios autorizados."
 }
+
