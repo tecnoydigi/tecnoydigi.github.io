@@ -2,7 +2,7 @@ let lang = localStorage.getItem("lang") || "en";
 let translations = {};
 
 document.addEventListener("DOMContentLoaded", async () => {
-  // Cargar traducciones
+  // load translations
   translations = await loadLanguage(lang);
   applyTranslations();
 
@@ -36,4 +36,5 @@ function applyTranslations() {
     }
   });
 }
+
 
