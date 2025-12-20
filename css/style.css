@@ -1,44 +1,129 @@
 body {
-  font-family: Arial, sans-serif;
-  padding: 1rem;
-  margin: 0 auto;
-  max-width: 900px;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f8fc;
+  color: #333;
 }
-header {
+
+.site-header {
+  background-color: #fff;
+  padding: 1rem 2rem;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 2px solid #e3e3e3;
 }
-header nav a {
+
+nav a {
   margin-right: 1rem;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
 }
+
+nav select {
+  padding: 0.3rem;
+}
+
+.hero {
+  background: linear-gradient(to right, #3a7bd5, #00d2ff);
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.hero-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.btn-primary, .btn-secondary {
+  display: inline-block;
+  background-color: #fff;
+  color: #0077cc;
+  padding: 0.8rem 1.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover, .btn-secondary:hover {
+  background-color: #e0e0e0;
+}
+
+.quick-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 2rem 1rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: white;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.card a {
+  text-decoration: none;
+  color: #0077cc;
+  font-weight: 600;
+}
+
+.featured-books {
+  padding: 2rem;
+  background-color: #fff;
+}
+
+.featured-books h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.book-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
 .book {
-  border: 1px solid #ccc;
-  padding: 1rem;
-  margin-bottom: 1rem;
+  background-color: #fefefe;
+  border: 1px solid #ddd;
+  padding: 1.5rem;
+  border-radius: 6px;
+  width: 300px;
+  text-align: center;
 }
-.chapter {
-  background: #f7f7f7;
-  padding: 0.5rem;
-  margin-top: 0.4rem;
-}
-#search-input {
-  width: 100%;
-  padding: 0.7rem;
-  margin-bottom: 1rem;
-  font-size: 1rem;
-}
-.topic-filter {
-  margin: 0.5rem 0;
-}
-.result {
-  border: 1px solid #ccc;
-  padding: 1rem;
-  margin-top: 1rem;
-}
+
 footer {
   text-align: center;
-  margin-top: 2rem;
+  padding: 1.5rem;
+  background-color: #eaeaea;
   font-size: 0.9rem;
-  color: #777;
+  color: #555;
+  margin-top: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .book-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-content h2 {
+    font-size: 1.8rem;
+  }
 }
