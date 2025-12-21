@@ -70,10 +70,10 @@ nav select {
 /* --- HERO (CON GRADIENT) --- */
 .hero {
   background: linear-gradient(
-    to right,
-    var(--blue-hero-start),
-    var(--blue-hero-end)
-  );
+      rgba(14, 15, 90, 0.7),
+      rgba(14, 15, 90, 0.7)
+    ),
+    url("../assets/img/hero-bg.png") center/cover no-repeat;
   color: var(--white);
   padding: 3rem 2rem;
   text-align: center;
@@ -163,6 +163,7 @@ footer {
   text-align: center;
   margin-top: 2rem;
 }
+
 
 
 
